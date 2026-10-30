@@ -26,4 +26,9 @@
 
   /* Hardcoded to 400 in snippets/theme-styles-variables.liquid */
   --font-paragraph--weight: var(--wobido-font-weight);
+
+  /* Body text 20px / 27px. The Theme Editor's paragraph size stops at 18px
+     and its line-height presets don't include 1.35, so both are set here. */
+  --font-paragraph--size: 1.25rem;
+  --font-paragraph--line-height: 1.35;
 }
