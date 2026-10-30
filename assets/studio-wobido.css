@@ -1,0 +1,29 @@
+/* Studio Wobido brand styles.
+   Loaded after Horizon's generated variables (see snippets/studio-wobido-head.liquid). */
+
+:root {
+  /* Brand colors */
+  --wobido-blue: #1463e7;
+  --wobido-yellow: #fcffa8;
+  --wobido-cream: #f8f7ee;
+  --wobido-pink: #ff99d5;
+  --wobido-green: #00b380;
+
+  /* Brand font: Spline Sans Medium everywhere.
+     Replaces the font families and weights chosen in the Theme Editor. */
+  --wobido-font-family: 'Spline Sans', sans-serif;
+  --wobido-font-weight: 500;
+
+  --font-body--family: var(--wobido-font-family);
+  --font-subheading--family: var(--wobido-font-family);
+  --font-heading--family: var(--wobido-font-family);
+  --font-accent--family: var(--wobido-font-family);
+
+  --font-body--weight: var(--wobido-font-weight);
+  --font-subheading--weight: var(--wobido-font-weight);
+  --font-heading--weight: var(--wobido-font-weight);
+  --font-accent--weight: var(--wobido-font-weight);
+
+  /* Hardcoded to 400 in snippets/theme-styles-variables.liquid */
+  --font-paragraph--weight: var(--wobido-font-weight);
+}

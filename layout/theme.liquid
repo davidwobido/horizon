@@ -23,6 +23,8 @@
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-palette' -%}
+    {%- # Studio Wobido: brand font and styles, must stay after color-palette -%}
+    {%- render 'studio-wobido-head' -%}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}

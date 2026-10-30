@@ -1,0 +1,22 @@
+{% doc %}
+  Studio Wobido: loads the self-hosted brand font and the brand stylesheet.
+
+  Rendered in layout/theme.liquid after `color-palette`, so the variables in
+  studio-wobido.css override Horizon's generated ones.
+{% enddoc %}
+
+{{ 'SplineSans-Medium.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+
+{% style %}
+  /* Only the Medium (500) cut exists. Declaring it for every weight means
+     Horizon's hardcoded weights (600, 700, bold) also render Medium instead of a faux bold. */
+  @font-face {
+    font-family: 'Spline Sans';
+    src: url('{{ 'SplineSans-Medium.woff2' | asset_url }}') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+{% endstyle %}
+
+{{ 'studio-wobido.css' | asset_url | stylesheet_tag }}
